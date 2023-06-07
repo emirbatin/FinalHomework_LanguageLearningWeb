@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lango</title>
+  <link rel="stylesheet" href="../style/login.css">
+
+</head>
+<body>
+    <script src="../js/pageRedirect.js"></script>
+    <script src="../js/login.js"></script>
+<div class="section">
+
+<!--Giriş Ekranı Container-->
+
+<div class="login-container">
+    <div class="right-box">
+        <div class="right-items">
+            <div class='earthcontainer'>
+                <img class="earth" src="../assets/icons/svg/europe.svg" alt="EarthIcon">
+            </div>
+        </div>
+    </div>
+    <div class="left-box">
+        <h1 class="title">Giriş Yap</h1>
+        <div class="left-items">
+          <label for="username" class="userName">Kullanıcı Adı</label>
+          <input type="text" id="usernameInput" class="input-field" placeholder="Kullanıcı Adı"><br>
+          <label for="password" class="pass">Parola</label>
+          <input type="password" id="passwordInput" class="input-field" placeholder="Parola"><br>
+          <div class="button-container">
+            <button class="btnLogin">Giriş Yap</button>
+          </div>
+        </div>
+      </div>
+</div>
+<!--Dalgalar Container-->
+<div>
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+</g>
+</svg>
+</div>
+</div>
+</body>
+</html>

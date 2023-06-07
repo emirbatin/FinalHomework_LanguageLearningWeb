@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lango</title>
+    <link rel="stylesheet" href="../style/profile.css">
+</head>
+<body>
+    <!--Header Container-->
+    <div class="container">
+        <div class="top-container">
+            <div class="profile-container">
+                <img class="profilePicture" src="../assets/pictures/profilepicture.jpg" alt="">
+            </div>
+            <div class="top-container-items">
+                <div class="button-container">
+                    <button class="btnEdit" onclick="redirectToSettings()">Düzenle</button>
+                </div>
+                <h2 class="name">Emir Batın</h2>
+                <p class="usrName">@ebk</p>
+                <p class="registerDate">10.06.2023 tarihinden beri üye</p>
+                <img class="currentLearning" src="../assets/icons/svg/japan.svg" alt="">
+                <img class="currentLearning" src="../assets/icons/svg/united kingdom.svg" alt="">
+                <img class="currentLearning" src="../assets/icons/svg/china.svg" alt="">
+            </div>         
+        </div>
+        <!--İstatistik Bölümü-->
+        <div class="line"><hr></div>
+        <div class="statistics">
+            <h2 class="statisticTitle">İstatistik</h2>
+            <div class="currentLearningLang-container">
+              <img class="currentLearningLangFlag" src="../assets/icons/svg/japan.svg" alt="Japanese">
+              <div class="currentLearningLangTexts">
+                <p class="jp-turkish">Japonca</p>
+                <p class="jp-japanese">日本語</p>
+              </div>
+            </div>
+            <p>Genel İlerleme</p>
+            <div class="progress-bar--wrap progress-bar--green">
+                <div class="progress-bar">
+                  Progress
+                  <div class="progress-bar--inner" style="width: 1%;"></div>
+                </div>
+                <span class="progress-bar--counter">1%</span>
+              </div>
+            <p>Tamamlanan dersler</p>
+            <div class="progress-bar--wrap progress-bar--green">
+                <div class="progress-bar">
+                  Progress
+                  <div class="progress-bar--inner" style="width: 0%;"></div>
+                </div>
+                <span class="progress-bar--counter">0%</span>
+            </div>
+            <p>Ezberlenen kelimeler</p>
+            <div class="progress-bar--wrap progress-bar--green">
+                <div class="progress-bar">
+                  Progress
+                  <div class="progress-bar--inner" style="width: 0%;"></div>
+                </div>
+                <span class="progress-bar--counter">0%</span>
+            </div>
+            <p>Dinlenen Skeçler</p>
+            <div class="progress-bar--wrap progress-bar--green">
+                <div class="progress-bar">
+                  Progress
+                  <div class="progress-bar--inner" style="width: 0%;"></div>
+                </div>
+                <span class="progress-bar--counter">0%</span>
+            </div>
+        </div>  
+    </div>
+
+     <!--Sağda Yer Alan Navbar-->
+
+     <div class="right-container">
+        <img class="logo" src="../assets/logo/logoblue.png" alt="">
+        <div class="buttons" onclick="redirectToLobby()">
+            <div class="image">
+                <img class="lobby" src="../assets/icons/svg/home.svg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Anasayfa</h1>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="image">
+                <img class="profile" src="../assets/pictures/profilepicture.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Profil</h1>
+            </div>
+        </div>
+        <div class="buttons" onclick="redirectToSettings()">
+            <div class="image">
+                <img class="settings" src="../assets/icons/svg/settings.png" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Ayarlar</h1>
+            </div>
+        </div>
+    </div>
+      <script src="../js/pageRedirect.js"></script>
+      <script src="../js/progressbar.js"></script>
+      <script src="../js/listening.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+
+*{
+  font-family: 'Geologica', sans-serif;
+}
+
+body {
+  background: linear-gradient(60deg, #085078 0%, #85D8CE 100%);
+  color: #fff;
+  height: 100vh;
+  margin:0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 45px;
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    transform: translateY(-50%);
+}
+
+
+.header {
+  background-color: #333 transparent;
+  height: 60px;
+}
+
+.logo img {
+  display: flex;
+  object-fit:contain;
+  margin-top: 30px;
+  transform: translateX(130%);
+  height: 100px;
+  max-width:auto;
+}
+
+
+.section {
+  position:relative;
+  text-align:center;
+}
+
+.inner-section {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+  z-index: 1;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+  margin-top: 15vh;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*Earth and Flags*/
+
+.earth {
+    position:absolute;
+    
+    top: 47vh;
+    right: 10vw;
+    transform: translate(50%, -50%);
+    z-index: 2;
+}
+
+.flags-container{
+  z-index: 3;
+  width: 100vw;
+}
+
+.flags-container .tr{
+  position:absolute;
+  height: 7vh;
+    top: 50vh;
+    right: 88vh;
+    transform: translate(50%, -50%);
+}
+.flags-container .cn{
+  position:absolute;
+  height: 7vh;
+    top: 35vh;
+    right: 86vh;
+    transform: translate(50%, -50%);
+}
+
+.flags-container .jp{
+  position:absolute;
+  height: 7vh;
+    top: 65vh;
+    right: 86vh;
+    transform: translate(50%, -50%);
+}
+
+.flags-container .uk{
+  position:absolute;
+  height: 7vh;
+    top: 80vh;
+    right: 82vh;
+    transform: translate(50%, -50%);
+    z-index: 3;
+}
+
+.flags-container .skrn{
+  position:absolute;
+  height: 7vh;
+    top: 20vh;
+    right: 82vh;
+    transform: translate(50%, -50%);
+}
+
+.flags-container .gr{
+  position:absolute;
+  height: 7vh;
+    top: 95vh;
+    right: 75vh;
+    transform: translate(50%, -50%);
+}
+
+.flags-container .sp{
+  position:absolute;
+  height: 7vh;
+    top: 5vh;
+    right: 75vh;
+    transform: translate(50%, -50%);
+}
+
+.flags-container .port{
+  position:absolute;
+  height: 7vh;
+    top: -8vh;
+    right: 62vh;
+    transform: translate(50%, -50%);
+}
+
+.button-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minimal-button {
+  position: relative;
+  background-color: #83D7CF;
+  color: #fff;
+  border: none;
+  padding: 20px 100px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  transform: translate(-100%, -400%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.minimal-button:hover {
+  background-color: #4E9CA8;
+}
+
+/*Responsive Telefon*/
+@media (max-width: 768px) {
+  .waves {
+    height:100px;
+    min-height:40px;
+  }
+  .content {
+    height:300vh;
+  }
+  h1 {
+    font-size:36px;
+  }
+  .logo img {
+    display: flex;
+    object-fit:contain;
+    margin-top: 30px;
+    transform: translateX(10%);
+    height: 100px;
+    max-width:auto;
+  }
+  .earth {
+    position:absolute;
+    top: 47vh;
+    right: 10vw;
+    transform: translate(30%, 10%);
+    z-index: 1;
+}
+
+.minimal-button {
+  position: relative;
+  background-color: #83D7CF;
+  color: #fff;
+  border: none;
+  padding: 20px 100px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  transform: translate(0%, -400%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.flags-container{
+  display: none;
+}
+
+}

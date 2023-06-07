@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lango</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'><link rel="stylesheet" href="../style/lobby.css">
+</head>
+<body>
+
+  <img class="earth" src="../assets/icons/svg/europe.svg" alt="">
+
+
+    <div class="header">
+        <div class="logo">
+        <img src="../assets/logo/logowhite.png" alt="Logo">
+        </div>
+    </div>
+
+
+    <div class="section">
+
+<!-- Dil Öğrenimi İçin Seçenekler -->
+
+        <div class="lang-selection">
+            <div class="button-container">
+                <div class="button" onclick="redirectToMixLearning()">
+                  <div class="button-content">
+                    <img src="../assets/pictures/lobby/2018gakushu.png" alt="">
+                    <div class="button-text">
+                      <h1 class="title">Karışık Öğrenim</h1>
+                      <p class="desc">Seviyeler eşliğinde kelimeler öğrenirken grammer, dinleme, konuşma ve okuma yeteneğinizi geliştirin</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="button" onclick="redirectToSpeakingListening()">
+                  <div class="button-content">
+                    <img src="../assets/pictures/lobby/kiku_man.png" alt="">
+                    <div class="button-text">
+                      <h1 class="title">Dinleme</h1>
+                      <p class="desc">Günlük konuşmaları sohbet eşliğinde dinlerken konuşarak cevap verip dinleme ve okuma yeteneğinizi geliştirin! </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="button" onclick="redirectToAlphebetLearning()">
+                  <div class="button-content">
+                    <img src="../assets/pictures/lobby/study_nihongo.png" alt="">
+                    <div class="button-text">
+                      <h1 class="title">Alfabe</h1>
+                      <p class="desc">Japonca'daki Hiragana, Katakana ve Kanji hecelerini, vuruşlarıyla beraber eğlenerek öğrenin!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+       
+<!-- Profil Ve İstatistik -->
+
+        <div class="profile-container">
+            <img class="profilePicture" src="../assets/pictures/profilepicture.jpg" alt="">
+            <p class="accName">Batın</p>
+            <p class="accPerm">Öğrenci</p> 
+            <hr class="line">
+            <div class="langLearningIcons">
+                <img class="en" src="../assets/icons/svg/united kingdom.svg" alt="">
+                <img class="jp" src="../assets/icons/svg/japan.svg" alt="">
+                <img class="cn" src="../assets/icons/svg/china.svg" alt="">
+            </div>
+            <div class="statistics-container">
+                <h2 class="statisticTitle">İstatistik</h2>
+                <hr class="line">
+
+                <div class="currentLearningLang-container">
+                  <img class="currentLearningLangFlag" src="../assets/icons/svg/japan.svg" alt="Japanese">
+                  <div class="currentLearningLangTexts">
+                    <p class="jp-turkish">Japonca</p>
+                    <p class="jp-japanese">日本語</p>
+                  </div>
+                </div>
+                <p>İlerleme</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 50%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">50%</span>
+                  </div>
+                <p>Öğrenilen Kelimeler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">30%</span>
+                  </div>
+                <p>Dinlenen Skeçler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 10%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">10%</span>
+                  </div>
+            </div>
+            
+        </div>
+      </div>
+
+<!-- Island Bar Daha Sonra Eklenecek!!! -->
+
+<!-- 
+      <div class="island-wrapper">
+        <nav class="island closed">
+          <h1>Menü</h1>
+          <div class="rightcover">
+            <ul>
+              <li>
+                <a href="#Moments">Test</a>
+                <a href="#Forum">Test</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="leftcover">
+            <ul>
+              <li>
+                <a href="#Main">Test</a>
+                <a href="#Settings">Test</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+  
+    <article>
+    -->
+  <!-- partial -->
+    <script  src="../js/dynamicIsland.js"></script>
+    <script  src="../js/pageRedirect.js"></script>
+  
+  </body>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lango</title>
+    <link rel="stylesheet" href="../style/alphabetPage.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Profil Ve İstatistik -->
+
+        <div class="profile-container">
+            <img class="profilePicture" src="../assets/pictures/profilepicture.jpg" alt="">
+            <p class="accName">Batın</p>
+            <p class="accPerm">Öğrenci</p> 
+            <div class="statistics-container">
+                <h2 class="statisticTitle">İstatistik</h2>
+                <hr class="line">
+                <div class="currentLearningLang-container">
+                  <img class="currentLearningLangFlag" src="../assets/icons/svg/japan.svg" alt="Japanese">
+                  <div class="currentLearningLangTexts">
+                    <p class="jp-turkish">Japonca</p>
+                    <p class="jp-japanese">日本語</p>
+                  </div>
+                </div>
+                <p>İlerleme</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 1%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">1%</span>
+                  </div>
+                <p>Öğrenilen Kelimeler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">0%</span>
+                  </div>
+                <p>Dinlenen Skeçler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">0%</span>
+                  </div>
+            </div>   
+        </div>
+  </div>
+
+    <!--Alfabe Container-->
+
+    <div id="wrap">
+        <ul  class="tabMenu" id="tab">
+            <li class="select">
+                <a href="#tab1">Hiragana</a>
+            </li>
+            <li>
+                <a href="#tab2">Katakana</a>
+            </li>
+            <li>
+                <a href="#tab3">Kanji</a>
+            </li>
+        </ul>	
+        <div class="tabContent" id="cate1">
+            <h2 class="tabTitle">Hiragana</h2>
+            <p>Hiragana, Japon alfabesinin bir yazı sistemi veya karakter setidir. Japonca'nın temel seslerini ifade etmek için kullanılır ve genellikle çocukların öğrenmeye başladığı ilk yazı sistemi olarak kabul edilir. Hiragana karakterleri, hepsi basit, yuvarlak hatlardan oluşan yumuşak ve kare şekillerdir. 
+                <div class="hiragana-container">
+                    <img src="../assets/pictures/japanese/Hiragana.png" alt="">
+                </div>
+        </div>
+        <div class="tabContent disnon" id="cate2">
+            <h2 class="tabTitle" >Katakana</h2>
+            <p>Katakana, Japon alfabesinin bir yazım sistemidir. Japonya'da yabancı dillerden gelen sözcüklerin ve yabancı isimlerin yazımında kullanılır. Katakana, diğer Japon yazı sistemlerinden biri olan hiragana ile birlikte kullanılır. Katakana karakterleri, genellikle kare veya dikdörtgen şekillerde bulunur ve daha keskin hatlara sahiptir.</p>
+            <div class="katakana-container">
+                <img src="../assets/pictures/japanese/Katakana.png" alt="">
+            </div>
+        </div>
+        <div class="tabContent disnon" id="cate3">
+            <h2 class="tabTitle">Kanji</h2>
+            <p>Kanji, Japon alfabesinin bir yazım sistemi olan Japonca'da kullanılan Çince karakterlerdir. Kanji karakterleri, karmaşık işaretlerden oluşur ve her bir karakter, bir kelimenin veya bir kelime kökünün anlamını veya sesini ifade edebilir. Japonca'da yaklaşık olarak 2000 yaygın kullanılan kanji karakteri bulunmaktadır.</p>
+            <div class="table-title">
+                <h3>JLPT-5 Kanjileri</h3>
+                </div>
+                <table class="table-fill">
+                <thead>
+                <tr>
+                <th class="text-left">Kanji</th>
+                <th class="text-left">Onyomi</th>
+                <th class="text-left">Kunyomi</th>
+                <th class="text-left">Kanji Anlamı</th>
+                </tr>
+                </thead>
+                <tbody class="table-hover">
+                <tr>
+                <td class="text-left">日</td>
+                <td class="text-left">nichi, jitsu <br>ニチ, ジツ</td>
+                <td class="text-left">hi, -bi, -ka <br>ひ, -び, -か</td>
+                <td class="text-left">Gün, güneş, Japonya, sayıyla gün gösterimi</td>
+                </tr>
+                <tr>
+                <td class="text-left">一</td>
+                <td class="text-left">ichi <br>イチ</td>
+                <td class="text-left">hito(tsu)<br>ひと(つ)</td>
+                <td class="text-left">Bir</td>
+                </tr>
+                <tr>
+                    <td class="text-left">国</td>
+                    <td class="text-left">koku <br>コク</td>
+                    <td class="text-left">kuni <br>くに</td>
+                    <td class="text-left">Ülke</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">人</td>
+                        <td class="text-left">jin, nin <br>ジン、 ニン</td>
+                        <td class="text-left">hito <br>ひと</td>
+                        <td class="text-left">Kişi</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">年</td>
+                            <td class="text-left">nen <br>ネン</td>
+                            <td class="text-left">toshi <br>とし</td>
+                            <td class="text-left">Yıl, sayıyla yıl gösterimi</td>
+                            </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+
+    <!--Sağda Yer Alan Navbar-->
+
+    <div class="right-container">
+        <img class="logo" src="../assets/logo/logoblue.png" alt="">
+        <div class="buttons" onclick="redirectToLobby()">
+            <div class="image">
+                <img class="lobby" src="../assets/icons/svg/home.svg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Anasayfa</h1>
+            </div>
+        </div>
+        <div class="buttons" onclick="redirectToProfile()">
+            <div class="image">
+                <img class="profile" src="../assets/pictures/profilepicture.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Profil</h1>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="image">
+                <img class="settings" src="../assets/icons/svg/settings.png" alt="">
+            </div>
+            <div class="text" onclick="redirectToSettings()">
+                <h1 class="title">Ayarlar</h1>
+            </div>
+        </div>
+    </div>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../js/tabbar.js"></script>
+    <script src="/js/pageRedirect.js"></script>
+    <script src="/js/progressbar.js"></script>
+</body>
+</html>

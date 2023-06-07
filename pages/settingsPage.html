@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lango</title>
+    <link rel="stylesheet" href="../style/settings.css">
+</head>
+<body>
+    <!--Ayarlar Container-->
+
+    <div class="box">
+        <h1 class="title">Ayarlar</h1>
+        <div class="picture-container">
+            <img class="profilePicture" src="../assets/pictures/profilepicture.jpg" alt="">
+            <div class="changeImage">
+            <h3>Profil resmi</h3>
+            <button class="btnChange">Yükle</button>
+            <p class="info1">Dosya seçilmedi.</p>
+            <p class="info2">Maks. seçilebilecek dosya boyutu 1MB</p>
+            </div>
+        </div>
+        
+        <div class="items">
+          <label for="username" class="userName">Kullanıcı Adı</label>
+          <input type="text" id="usernameInput" class="input-field" placeholder="Kullanıcı Adı"><br>
+          <label for="email" class="email">E-posta</label>
+          <input type="text" id="emailInput" class="input-field" placeholder="E-posta"><br>
+          <label for="password" class="pass">Parola</label>
+          <input type="password" id="passwordInput" class="input-field" placeholder="Parola"><br>
+            <button class="btnUpdate">Güncelle</button>
+          </div>
+        </div>
+      </div>
+    
+<!--Sağda Yer Alan Navbar-->
+
+     <div class="right-container">
+        <img class="logo" src="../assets/logo/logoblue.png" alt="">
+        <div class="buttons" onclick="redirectToLobby()">
+            <div class="image">
+                <img class="lobby" src="../assets/icons/svg/home.svg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Anasayfa</h1>
+            </div>
+        </div>
+        <div class="buttons" onclick="redirectToProfile()">
+            <div class="image">
+                <img class="profile" src="../assets/pictures/profilepicture.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Profil</h1>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="image">
+                <img class="settings" src="../assets/icons/svg/settings.png" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Ayarlar</h1>
+            </div>
+        </div>
+    </div>
+      <script src="/js/pageRedirect.js"></script>
+      <script src="/js/progressbar.js"></script>
+      <script src="/js/listening.js"></script>
+
+
+</body>
+</html>

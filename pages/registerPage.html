@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lango</title>
+  <link rel="stylesheet" href="../style/register.css">
+
+</head>
+<body>
+    <script src="/js/pageRedirect.js"></script>
+<div class="section">
+
+    <!--Kayıt Ekranı Contaier-->
+
+<div class="register-container">
+    <div class="right-box">
+        <div class="right-items">
+            <div class='earthcontainer'>
+                <img class="earth" src="../assets/icons/svg/europe.svg" alt="EarthIcon">
+            </div>
+        </div>
+    </div>
+    <div class="left-box">
+        <h1 class="title">Kayıt Ol</h2>
+        <div class="left-items">
+                <label for="name" class="name">Ad</label>
+                <input type="text" id="logininput" class="input-field" placeholder="Ad"><br>
+                <label for="surname" class="surName">Soyad</label>
+                <input type="text" id="logininput" class="input-field" placeholder="Soyad"><br>
+                <label for="username" class="userName">Kullanıcı Adı</label>
+                <input type="text" id="logininput" class="input-field" placeholder="Kullanıcı Adı"><br>
+                <label for="email" class="email">Email</label>
+                <input type="text" id="logininput" class="input-field" placeholder="Email"><br>
+                <label for="password" class="pass">Parola</label>
+                <input type="password" id="logininput" class="input-field" placeholder="Parola"><br>
+                <div class="button-container">
+                    <button class="btnLogin" onclick="redirectToChooseLang()">Kayıt Ol</button>
+                </div>
+        </div>
+    </div>
+</div>
+<!--Dalga Container-->
+<div>
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+</g>
+</svg>
+</div>
+
+</div>
+<!--Section ends-->
+  
+</body>
+</html>

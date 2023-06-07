@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lango - Karışık Öğrenim</title>
+    <link rel="stylesheet" href="../style/mixLearning.css">
+</head>
+<body>
+      <div class="container">
+
+        <!-- Profil Ve İstatistik -->
+
+        <div class="profile-container">
+            <img class="profilePicture" src="../assets/pictures/profilepicture.jpg" alt="">
+            <p class="accName">Batın</p>
+            <p class="accPerm">Öğrenci</p> 
+            <div class="statistics-container">
+                <h2 class="statisticTitle">İstatistik</h2>
+                <hr class="line">
+                <div class="currentLearningLang-container">
+                  <img class="currentLearningLangFlag" src="../assets/icons/svg/japan.svg" alt="Japanese">
+                  <div class="currentLearningLangTexts">
+                    <p class="jp-turkish">Japonca</p>
+                    <p class="jp-japanese">日本語</p>
+                  </div>
+                </div>
+                <p>İlerleme</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 1%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">1%</span>
+                  </div>
+                <p>Öğrenilen Kelimeler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">0%</span>
+                  </div>
+                <p>Dinlenen Skeçler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">0%</span>
+                  </div>
+            </div>   
+        </div>
+      </div>
+      </div>  
+    </div>
+  </div>
+
+<!--Level Container-->
+
+    <div class="level-container">
+        <div class="level1-container">
+            <h1>Ünite 1 <br>Japonca'ya Giriş</h1>
+            <div class="Level1-1" onclick="redirectToIlkKelime()">
+                <p>İlk Kelime</p>
+            </div>
+            <div class="Level1-2">
+                <p>Hiragana Kullanımı</p>
+            </div>
+            <div class="Level1-3">
+                <p>Alıştırma</p>
+            </div>
+            <div class="Level1-4">
+                <p>Yeni Kelime</p>
+            </div>
+            <div class="Level1-5">
+                <p>Sınav</p>
+            </div>
+        </div>
+        <div class="level2-container">
+            <h1>Ünite 2 <br>Günlük Selamlaşma</h1>
+            <div class="Level2-1">
+                <p>Merhaba! ve Görüşürüz!</p>
+            </div>
+            <div class="Level2-2">
+                <p>Kişisel Pratik </p>
+            </div>
+            <div class="Level2-3">
+                <p>Alıştırma</p>
+            </div>
+            <div class="Level2-4">
+                <p>Sınav</p>
+            </div>
+        </div>
+        <div class="level3-container">
+            <h1>Ünite 3 <br>Kendini Tanıt</h1>
+            <div class="Level3-1">
+                <p>Merhaba!</p>
+            </div>
+            <div class="Level3-2">
+                <p>İsim sor.</p>
+            </div>
+            <div class="Level3-3">
+                <p>Kendinden bahset</p>
+            </div>
+            <div class="Level3-4">
+                <p>Meslek Sor</p>
+            </div>
+            <div class="Level3-5">
+                <p>Sınav</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Sağda Yer Alan Navbar-->
+
+    <div class="right-container">
+        <img class="logo" src="../assets/logo/logoblue.png" alt="">
+        <div class="buttons" onclick="redirectToLobby()">
+            <div class="image">
+                <img class="lobby" src="../assets/icons/svg/home.svg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Anasayfa</h1>
+            </div>
+        </div>
+        <div class="buttons" onclick="redirectToProfile()">
+            <div class="image">
+                <img class="profile" src="../assets/pictures/profilepicture.jpg" alt="" >
+            </div>
+            <div class="text">
+                <h1 class="title">Profil</h1>
+            </div>
+        </div>
+        <div class="buttons" onclick="redirectToSettings()">
+            <div class="image">
+                <img class="settings" src="../assets/icons/svg/settings.png" alt="">
+            </div>
+            <div class="text">
+                <h1 class="title">Ayarlar</h1>
+            </div>
+        </div>
+    </div>
+    <script src="/js/pageRedirect.js"></script>
+    <script src="/js/progressbar.js"></script>
+</body>
+</html>

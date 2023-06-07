@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lango</title>
+    <link rel="stylesheet" href="../style/listeningPage.css">
+</head>
+<body>
+      <div class="container">
+
+        <!-- Profil Ve İstatistik -->
+
+        <div class="profile-container">
+            <img class="profilePicture" src="../assets/pictures/profilepicture.jpg" alt="">
+            <p class="accName">Batın</p>
+            <p class="accPerm">Öğrenci</p> 
+            <div class="statistics-container">
+                <h2 class="statisticTitle">İstatistik</h2>
+                <hr class="line">
+                <div class="currentLearningLang-container">
+                  <img class="currentLearningLangFlag" src="../assets/icons/svg/japan.svg" alt="Japanese">
+                  <div class="currentLearningLangTexts">
+                    <p class="jp-turkish">Japonca</p>
+                    <p class="jp-japanese">日本語</p>
+                  </div>
+                </div>
+                <p>İlerleme</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 1%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">1%</span>
+                  </div>
+                <p>Öğrenilen Kelimeler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">0%</span>
+                  </div>
+                <p>Dinlenen Skeçler</p>
+                <div class="progress-bar--wrap progress-bar--green">
+                    <div class="progress-bar">
+                      Progress
+                      <div class="progress-bar--inner" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-bar--counter">0%</span>
+                  </div>
+            </div>   
+        </div>
+      </div>
+      </div>  
+    </div>
+  </div>
+
+    <!--Dinleme Bölümü Container-->
+
+    <div class="listening-container">
+          <div class="char-container">
+            <div class="imageContainer">
+              <img class="imageListening" src="../assets/pictures/listening/icon_business_man05.png" alt="">
+            </div>
+           <div class="textContainer">
+              <h2>Haru-san</h2>
+              <p>こんにちはアイちゃんお元気ですか？</p>
+              <p>Merhaba Ai-chan, Nasılsın?</p>
+              <img class="voice-speak" src="../assets/icons/svg/speaking.svg" alt="" onclick="playHaru1()">
+            </div>
+          </div>
+
+          <div class="char-container">
+            <div class="imageContainer">
+              <img class="imageListening" src="../assets/pictures/listening/icon_business_woman04.png" alt="" > 
+            </div>
+           <div class="textContainer">
+              <h2>Ai-chan</h2>
+              <p>ハルさんこんにちは。元気です。元気ですか？</p>
+              <p>Merhaba Haru-san, İyiyim. Sen nasılsın?</p>
+              <img class="voice-speak" src="../assets/icons/svg/speaking.svg" alt="" onclick="playAi1()">
+            </div>
+          </div>
+
+          <div class="char-container">
+            <div class="imageContainer">
+              <img class="imageListening" src="../assets/pictures/listening/icon_business_man05.png" alt="">
+            </div>
+           <div class="textContainer">
+              <h2>Haru-san</h2>
+              <p>元気ですありがとう。</p>
+              <p>İyiyim teşekkür ederim.</p>
+              <img class="voice-speak" src="../assets/icons/svg/speaking.svg" alt="" onclick="playHaru2()">
+            </div>
+          </div>
+
+          <div class="char-container">
+            <div class="imageContainer">
+              <img class="imageListening" src="../assets/pictures/listening/icon_business_man05.png" alt="">
+            </div>
+           <div class="textContainer">
+              <h2>Haru-san</h2>
+              <p>でわじゃまたね！</p>
+              <p>O zaman sonra görüşürüz!</p>
+              <img class="voice-speak" src="../assets/icons/svg/speaking.svg" alt="" onclick="playHaru3()">
+            </div>
+          </div>
+
+          <div class="char-container">
+            <div class="imageContainer">
+              <img class="imageListening" src="../assets/pictures/listening/icon_business_woman04.png" alt="" >
+            </div>
+           <div class="textContainer">
+              <h2>Ai-chan</h2>
+              <p>はいまたね！</p>
+              <p>Tamam sonra görüşürüz!</p>
+              <img class="voice-speak" src="../assets/icons/svg/speaking.svg" alt="" onclick="playAi2()">
+            </div>
+          </div>
+    </div>
+
+    <!--Sağda Yer Alan Navbar-->
+
+    <div class="right-container">
+      <img class="logo" src="../assets/logo/logoblue.png" alt="">
+      <div class="buttons" onclick="redirectToLobby()">
+          <div class="image">
+              <img class="lobby" src="../assets/icons/svg/home.svg" alt="">
+          </div>
+          <div class="text">
+              <h1 class="title">Anasayfa</h1>
+          </div>
+      </div>
+      <div class="buttons">
+          <div class="image">
+              <img class="profile" src="../assets/pictures/profilepicture.jpg" alt="">
+          </div>
+          <div class="text">
+              <h1 class="title">Profil</h1>
+          </div>
+      </div>
+      <div class="buttons">
+          <div class="image">
+              <img class="settings" src="../assets/icons/svg/settings.png" alt="">
+          </div>
+          <div class="text">
+              <h1 class="title">Ayarlar</h1>
+          </div>
+      </div>
+  </div>
+    <script src="/js/pageRedirect.js"></script>
+    <script src="/js/progressbar.js"></script>
+    <script src="/js/listening.js"></script>
+</body>
+</html>

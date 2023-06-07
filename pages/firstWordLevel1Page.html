@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lango</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="../style/level1hiragana.css">
+</head>
+<body>
+  <script src="../js/pageRedirect.js"></script>
+  
+  <!--Card-->
+
+  <div card-stack>
+    <input id="card-0" name="card-set" type="radio" checked/>
+    <div card>
+      <div class="content">
+        <img src="../assets/pictures/japanese/konnichiwa.webp" alt="Image">
+        <h1 class="Kelime">こんにちは</h1>
+        <h2>Kon'nichiwa</h2>
+        <h3>Merhaba</h3>
+        <label for="card-1">Devam</label>
+      </div>
+    </div>
+  
+    <input id="card-1" name="card-set" type="radio"/>
+    <div card>
+      <div class="content">
+        <img src="../assets/pictures/japanese/konnichiwa.webp" alt="Image">
+        <h2>こんにちは</h2>
+        <p>Bu kelimenin türkçesi nedir?</p>
+        <textarea class="input" rows="5"></textarea>
+        <label for="card-2">Kontrol Et</label>
+      </div>
+    </div>
+  
+    <input id="card-2" name="card-set" type="radio" />
+    <div card>
+      <div class="content">
+        <img src="../assets/pictures/japanese/konnichiwa.webp" alt="Image">
+        <h2>Merhaba</h2>
+        <p>Bu kelimenin japoncası nedir? (Romaji olarak yazın) </p>
+        <textarea class="input" rows="5"></textarea>
+        <label for="card-3">Kontrol Et</label>
+      </div>
+    </div>
+   
+    <input id="card-3" name="card-set" type="radio" />
+    <div card>
+      <div class="content">
+        <img src="../assets/pictures/japanese/konnichiwa.webp" alt="Image">
+        <h2>こんにちは</h2>
+        <p>Bir de sesli olarak söyler misin?</p>
+        <img class="micicon" src="../assets/icons/svg/micicon.png" alt="Image">
+        <label for="card-4">Kontrol Et</label>
+      </div>
+    </div>
+   
+    <input id="card-4" name="card-set" type="radio" />
+    <div card>
+      <div class="content">
+        <img src="../assets/pictures/japanese/omedetou.png" alt="">
+        <h1>Omedetou!!!</h1>
+        <h2>Tebrikler!</h2>
+        <p>Seni kutlarım! İlk kelimeni öğrendin artık bundan sonra daha sıkı bir şekilde öğrenmeye başlayabilirsin!</p>
+        <label for="card-5" onclick="redirectToMixLearning()">Çıkış</label>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

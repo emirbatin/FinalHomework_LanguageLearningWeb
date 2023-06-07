@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+*{
+    font-family: 'Geologica', sans-serif;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+    color: #fff;
+    overflow-x: hidden;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-70%);
+}
+.top-container.items, .name, .usrName, .registerDate{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -20px;
+    margin-top: 10px ;
+    color: black;
+}
+
+.usrName{
+    margin-top: 15px;
+    opacity: 0.3;
+}
+.registerDate{
+    margin-top: 30px;
+    font-size: 12px;
+    opacity: 0.3;
+}
+
+.profilePicture{
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.currentLearning{
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.button-container{
+    position: absolute;
+}
+
+  .btnEdit {
+    background-color: #83D7CF;
+    color: #fff;
+    border: none;
+    padding: 15px 100px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left:320px ;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btnEdit:hover {
+    background-color: #4E9CA8;
+  }
+  
+/*İstatistik*/
+
+.statistics{
+    display: flex;
+    width: 50%;
+    margin-top: -5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  .line{
+    color: black;
+    margin: 20px;
+    width: 800px;
+  }
+
+  .statisticTitle{
+    display: flex;
+    margin-bottom: 0px;
+  }
+  .currentLearningLang-container img{
+    display: flex;
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .progress-bar {
+    background: #f1f6fa;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1px #ccd6dd;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -20px;
+    text-indent: 100%;
+    width: 400px;
+  }
+  
+  .progress-bar--counter {
+    margin-left: 10px;
+    position: relative;
+    top: -17px;
+  }
+  
+  .progress-bar--counter .hidden {
+    display: inline-block;
+  }
+  
+  .progress-bar--wrap {
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 10px 0;
+  }
+  
+  .progress-bar--inner {
+    transition: all .5s ease-in-out;
+    border-radius: 20px;
+    height: 20px;
+    left: 0;
+    min-height: 10px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .progress-bar--green {
+    color: #6fc14b;
+  }
+  
+  .progress-bar--green .progress-bar--inner {
+    background-color: #6fc14b;
+  }
+
+/*Sağ Bar*/
+
+.right-container {
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    width: 420px;
+    height: 100%;
+    border-radius: 0px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-left: 2px solid #ccc;
+  }
+  
+  .right-container .logo {
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    width: 200px;
+  }
+  
+  .buttons {
+    margin: 10px auto;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+  }
+  .profile, .lobby, .settings {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  
+  
+  .title{
+    font-size: 24px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    margin-top:18px;
+    margin-left: 20px;
+  }
+  
+  .buttons:hover{
+    background-color: #e7e7e7;
+  }
+  

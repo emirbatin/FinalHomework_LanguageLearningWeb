@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+*{
+    font-family: 'Geologica', sans-serif;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.picture-container{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-items: left;
+  color: black;
+}
+
+.profilePicture{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  object-fit:cover;
+  margin-right: 20px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.userName{
+  color: black;
+  font-size: 20px;
+  transform: translate(-100%, 10%);
+  margin: 10px;
+}
+
+.email{
+  color: black;
+  font-size: 20px;
+  transform: translate(-185%, 10%);
+  margin: 10px;
+}
+
+.pass{
+  color: black;
+  font-size: 20px;
+  transform: translate(-240%, 10%);
+  margin: 10px;
+}
+
+.button-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnUpdate {
+  background-color: #83D7CF;
+  color: #fff;
+  border: none;
+  padding: 15px 100px;
+  margin: 50px;
+  font-size: 16px;
+  border-radius: 20px;
+  transform: translate(0%, 0%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btnUpdate:hover {
+  background-color: #4E9CA8;
+}
+
+.info1{
+  opacity: 0.5;
+}
+.info2{
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.btnChange {
+  background-color: #83D7CF;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+  margin: 0px;
+  font-size: 16px;
+  border-radius: 10px;
+  transform: translate(0%, 0%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btnChange:hover {
+  background-color: #4E9CA8;
+}
+
+
+
+.input-field {
+  width: 350px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+
+
+/*Sağ Bar*/
+
+.right-container {
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    width: 420px;
+    height: 100%;
+    border-radius: 0px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-left: 2px solid #ccc;
+  }
+  
+  .right-container .logo {
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    width: 200px;
+  }
+  
+  .buttons {
+    margin: 10px auto;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+  }
+  .profile, .lobby, .settings {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  
+  
+  .title{
+    font-size: 24px;
+    color: rgb(102, 102, 102);
+
+    margin-top:18px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  
+  .buttons:hover{
+    background-color: #e7e7e7;
+  }
+  
